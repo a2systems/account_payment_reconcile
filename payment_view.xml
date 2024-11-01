@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="account_payment_reconciliation_form" model="ir.ui.view">
+        <field name="name">account.payment.reconciliation.form</field>
+	<field name="model">account.payment</field>
+	<field name="inherit_id" ref="account.view_account_payment_form"></field>
+	<field name="arch" type="xml">
+		<field name="ref" position="after">
+			<field name="reconciliation_move_id" readonly="1" />
+		</field>
+        </field>
+    </record>
+
+</odoo>
